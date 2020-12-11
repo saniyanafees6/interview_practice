@@ -19,7 +19,6 @@
 
 
 def sub_arr(arr, K):
-    result = []
     sum = 0
     start = 0
     max = 0
@@ -28,7 +27,6 @@ def sub_arr(arr, K):
         if i >= K - 1:
             if max < sum:
                 max = sum
-            result.append(sum)
             sum -= arr[start]
             start += 1
     return max
